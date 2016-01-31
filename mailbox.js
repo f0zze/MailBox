@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('mailbox', []).directive('mailbox', MailBox);
+    angular.module('mailbox', ['restangular','users']).directive('mailbox', MailBox);
 
     function MailBox() {
         return {

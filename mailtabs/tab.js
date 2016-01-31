@@ -17,7 +17,6 @@
         };
 
         function TabController() {
-            console.dir(this);
         }
     }
 

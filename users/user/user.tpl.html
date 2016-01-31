@@ -1,0 +1,4 @@
+<div ng-init="edit = true">
+    <span ng-dblclick="edit = !edit">{{user.user.name}}</span>
+    <edit-user ng-if="edit" user="user.user"></edit-user>
+</div>

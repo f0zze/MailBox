@@ -9,11 +9,19 @@ function User() {
             edit: '='
         },
         controller: UserCtrl,
-        controllerAs: 'user',
+        controllerAs: 'userCtrl',
         bindToController: true
     };
 
-    function UserCtrl() {
+    function UserCtrl(Users) {
 
+        this.onEditUser = () => {
+            this.edit = true;
+            this.editUser = angular.copy(this.user);
+        };
+
+        this.remove = () => {
+            this.user.remove();
+        }
     }
 }

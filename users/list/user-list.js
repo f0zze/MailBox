@@ -10,11 +10,14 @@ function UserList() {
     };
 
     function UserList(Users) {
-        var vm = this;
-        vm.users = null;
+        this.users = null;
 
-        Users.getAll().then(function(data) {
-            vm.users = data;
+        this.makeEditable = (user) => {
+            console.dir(user);
+        };
+
+        Users.getList().then((data)=> {
+            this.users = data;
         });
     }
 }

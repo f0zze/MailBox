@@ -10,9 +10,8 @@
 
     <span ng-if="!userList.users">Loading...</span>
 
-
-    <a ng-init="edit = false" ng-dblclick="edit = !edit" ng-repeat="user in userList.users track by $index" href="#"
+    <a ng-repeat="user in userList.users track by $index" href="#"
        class="list-group-item">
-        <user user="user" edit="edit"></user>
+        <user user="user"></user>
     </a>
 </div>

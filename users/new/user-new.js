@@ -3,9 +3,9 @@ angular.module('users').directive('newUser', NewUser);
 function NewUser() {
     return {
         restrict: 'E',
-        templateUrl: './users/new/new-user.tpl.html',
+        templateUrl: './users/new/user-new.tpl.html',
         scope: {
-            userList:'='
+            userList: '='
         },
         controller: NewUserCtrl,
         controllerAs: 'newUser',
@@ -13,10 +13,11 @@ function NewUser() {
     };
 
     function NewUserCtrl(Users) {
-       this.save =  (user) => {
-           Users.save(user);
-           this.userList.push(user);
-           this.user = {};
-       }
+        this.save = (user) => {
+            Users.post(user).then((data) => {
+                this.userList.push(data);
+                this.user = {};
+            });
+        }
     }
 }

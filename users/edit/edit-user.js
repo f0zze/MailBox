@@ -5,13 +5,20 @@ function EditUser() {
         restrict: 'E',
         templateUrl:'./users/edit/edit.tpl.html',
         scope: {
-            user:'='
+            user:'=',
+            edit:'='
         },
         controller: UsersEditCtrl,
-        controllerAs: 'editUser'
+        controllerAs: 'editUser',
+        bindToController:true
     };
 
     function UsersEditCtrl() {
+
+        this.update = function(user) {
+            //User.save(user);
+            console.log(user);
+        }
 
     }
 }

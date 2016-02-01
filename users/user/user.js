@@ -5,7 +5,8 @@ function User() {
         restrict: 'E',
         templateUrl: './users/user/user.tpl.html',
         scope: {
-            user: '='
+            user: '=',
+            edit: '='
         },
         controller: UserCtrl,
         controllerAs: 'user',

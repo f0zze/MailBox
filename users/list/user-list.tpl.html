@@ -1,4 +1,18 @@
-<p>user list</p>
-<div ng-repeat="user in userList.users track by $index">
-    <user user="user"></user>
+<div class="list-group">
+    <a href="#" class="list-group-item active clearfix">
+        Contact List
+        <button style="float: right" class="btn btn-success" ng-click="newUser = !newUser">Add new+</button>
+    </a>
+
+    <div ng-if="newUser" class="new-user">
+        <new-user user-list="userList.users"></new-user>
+    </div>
+
+    <span ng-if="!userList.users">Loading...</span>
+
+
+    <a ng-init="edit = false" ng-dblclick="edit = !edit" ng-repeat="user in userList.users track by $index" href="#"
+       class="list-group-item">
+        <user user="user" edit="edit"></user>
+    </a>
 </div>

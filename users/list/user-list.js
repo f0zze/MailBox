@@ -11,7 +11,10 @@ function UserList() {
 
     function UserList(Users) {
         var vm = this;
+        vm.users = null;
 
-        vm.users = Users.getAll();
+        Users.getAll().then(function(data) {
+            vm.users = data;
+        });
     }
 }

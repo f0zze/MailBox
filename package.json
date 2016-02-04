@@ -17,7 +17,17 @@
   },
   "homepage": "https://github.com/f0zze/MailBox#readme",
   "dependencies": {
+    "angular": "^1.4.9",
+    "babel-loader": "^6.2.2",
     "bootstrap": "^3.3.6",
-    "restangular": "^1.5.1"
+    "ng-cache-loader": "0.0.15",
+    "restangular": "^1.5.1",
+    "ui-router": "^0.2.15"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^6.3.19"
   }
 }

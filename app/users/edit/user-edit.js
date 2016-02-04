@@ -14,14 +14,7 @@ function EditUser() {
     };
 
     function UsersEditCtrl(Users) {
-
-        this.cancel = () => {
-            this.edit = false;
-            this.clone = this.user;
-        };
-
         this.update = () => {
-            console.dir(Users);
             Users.customPUT(this.user);
         }
 

@@ -1,28 +1,28 @@
 <div ng-dblclick="userCtrl.onEditUser()">
-    <table>
-        <tr>
-            <td>
-                <span>{{userCtrl.user.name}}</span>
-            </td>
-            <td>
-                <span>{{userCtrl.user.surname}}</span>
-            </td>
-            <td>
-                <span><span class="glyphicon glyphicon-phone"></span>{{userCtrl.user.phone}}</span>
-            </td>
-            <td>
-                <span><span class="glyphicon glyphicon-envelope"></span>{{userCtrl.user.email}}</span>
-            </td>
-            <td>
-                    <span>
-             <a href="" ng-click="userCtrl.remove()">Remove</a>
-             <a href="" ng-click="userCtrl.onEditUser()">Edit</a>
-     </span>
-            </td>
-        </tr>
-    </table>
-
-
+    <div class="row">
+        <div class="col-md-3">
+            <span>{{userCtrl.user.name}}</span>
+        </div>
+        <div class="col-md-2">
+            <span>{{userCtrl.user.surname}}</span>
+        </div>
+        <div class="col-md-2">
+            <span>
+                <span class="glyphicon glyphicon-phone">
+            </span>
+                {{userCtrl.user.phone}}
+            </span>
+        </div>
+        <div class="col-md-3">
+            <span>
+                <span class="glyphicon glyphicon-envelope"></span>
+                {{userCtrl.user.email}}
+            </span>
+        </div>
+        <div class="col-md-2">
+            <a href="" ng-click="userCtrl.remove()">Remove</a>
+            <a href="" ng-click="userCtrl.onEditUser()">Edit</a></div>
+    </div>
     <div ng-if="userCtrl.edit">
         <hr/>
         <edit-user edit="userCtrl.edit" user="userCtrl.editUser"></edit-user>

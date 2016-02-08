@@ -1,10 +1,10 @@
 import mainPageTemplate from './views/main-page.html';
 
-export default function mainRouteConfig($stateProvider,$urlRouterProvider){
+export default function mainRouteConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('main',{
-           abstract:true,
-           template:mainPageTemplate
+        .state('main', {
+            url:'/mail',
+            template: mainPageTemplate
         });
 
     $urlRouterProvider.otherwise('/');

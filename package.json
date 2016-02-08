@@ -22,7 +22,9 @@
     "bootstrap": "^3.3.6",
     "ng-cache-loader": "0.0.15",
     "restangular": "^1.5.1",
-    "ui-router": "^0.2.15"
+    "ui-router": "^0.2.15",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",

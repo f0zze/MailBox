@@ -4,18 +4,17 @@ let NODE_ENV = "dev";
 const webpack = require('webpack');
 
 module.exports = {
-    context: __dirname + '/app',
     entry: "./index.js",
     output: {
-        path: __dirname + '/app',
-        filename: "dist/bundle.js"
+        path: __dirname,
+        filename: "bundle.js"
     },
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 loader: 'babel',
-                include: __dirname + '/app',
+                include: __dirname,
                 query: {
                     presets: ['es2015']
                 }

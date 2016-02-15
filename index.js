@@ -7,10 +7,9 @@ angular.module('mailbox', [uiRouter])
         $stateProvider
             .state('mailbox', {
                 url: "/",
-                templateUrl: "mailbox.html",
+                templateUrl: "mailbox/mailbox.html",
                 controller:()=>{
-
-                    alert('i am in');
+                    alert('i am in!!');
                 }
             })
     });

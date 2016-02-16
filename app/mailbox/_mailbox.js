@@ -1,10 +1,22 @@
-import angular from 'angular';
-import uiRouter from 'ui-router';
-import MailboxRouter from './mailboxRouter';
+'use strict';
 
-const mailbox = angular.module('mailbox', [uiRouter]);
-mailbox.config(()=>new MailboxRouter());
+const angular = require('angular');
+const uiRouter = require('ui-router');
 
-export default mailbox;
+const MailboxConfig = require('./mailbox.config');
+import { MailboxRun } from './mailbox.run';
+
+console.log('sdad');
+console.log(MailboxRun);
+console.log(new MailboxRun);
+
+
+
+angular.module('mailbox', [uiRouter])
+
+    .run(MailboxRun);
+
+
+module.exports = 'mailbox';
 
 

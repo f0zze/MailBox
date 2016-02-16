@@ -4,10 +4,10 @@ let NODE_ENV = "dev";
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./index.js",
+    entry: "./app/bootstrap.js",
     output: {
         path: __dirname,
-        filename: "bundle.js"
+        filename: "./app/dist/bundle.js"
     },
     module: {
         loaders: [

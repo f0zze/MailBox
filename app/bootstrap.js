@@ -1,6 +1,8 @@
-const angular = require('angular');
-const uiRouter = require('ui-router');
+import angular from 'angular';
+import uiRouter  from 'ui-router';
+import mailbox from './mailbox';
 
-const _mailbox = require('./mailbox');
-
-var mainModule = angular.module('appMailbox', [uiRouter, _mailbox]);
+angular.module('appMailbox', [
+    uiRouter,
+    mailbox.name
+]);

@@ -1,22 +1,27 @@
 'use strict';
 
-const angular = require('angular');
-const uiRouter = require('ui-router');
+import angular from 'angular';
+import uiRouter from 'ui-router';
 
-const MailboxConfig = require('./mailbox.config');
-import { MailboxRun } from './mailbox.run';
+import {MailboxConfig} from './mailboxConfig.js'
+import {MailboxRun} from './mailboxRun.js';
+import MailboxComponent from './mailboxComponent'
+import Components from './components/components';
 
-console.log('sdad');
-console.log(MailboxRun);
-console.log(new MailboxRun);
+let mailbox = angular.module('mailbox', [
+        uiRouter,
+        Components.name
+    ])
+    .config(($stateProvider) => {
+        $stateProvider
+            .state('mailbox', {
+                url: '/',
+                template: '<mailbox></mailbox>',
+                controller:()=>{console.log('run....')}
+            });
+    });
 
 
-
-angular.module('mailbox', [uiRouter])
-
-    .run(MailboxRun);
-
-
-module.exports = 'mailbox';
+export default mailbox;
 
 

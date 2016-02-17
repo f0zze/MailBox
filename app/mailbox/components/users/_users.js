@@ -9,6 +9,7 @@ let usersModule = angular.module('users', [
     .config(($stateProvider) => {
         $stateProvider
             .state('friends', {
+                parent:'mailbox',
                 url: '/friends',
                 template: '<users></users>'
             });

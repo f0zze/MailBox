@@ -1,7 +1,7 @@
 import angular from 'angular';
-import navComponent from './navComponent';
+import sideNavComponent from './navComponent';
 
 let navModule = angular.module('nav', [])
-    .component('nav', navComponent);
+    .component('nav', sideNavComponent);
 
 export default navModule;

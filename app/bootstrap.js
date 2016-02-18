@@ -6,3 +6,5 @@ angular.module('appMailbox', [
     uiRouter,
     mailbox.name
 ]);
+
+console.log('bootstrap app.....');

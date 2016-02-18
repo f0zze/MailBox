@@ -1,11 +1,11 @@
 import template from './navbar.html';
-import NavBarController from './navbarController';
+import controller from './navbarController';
 
 let NavBarComponent = {
     restrict: 'E',
     bindings: {},
     template,
-    NavBarController,
+    controller,
     controllerAs: 'navbar'
 };
 

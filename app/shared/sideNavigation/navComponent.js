@@ -1,11 +1,11 @@
 import template from './nav.html';
-import navController from './navController';
+import controller from './navController';
 
 let navComponent = {
     restrict: 'E',
     bindings: {},
     template,
-    navController,
+    controller,
     controllerAs: 'nav'
 };
 

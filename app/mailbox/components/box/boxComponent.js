@@ -1,11 +1,11 @@
 import template from './box.html';
-import boxController from './boxController';
+import controller from './boxController';
 
 let boxComponent = {
     restrict: 'E',
     bindings: {},
     template,
-    boxController,
+    controller,
     controllerAs: 'box'
 };
 

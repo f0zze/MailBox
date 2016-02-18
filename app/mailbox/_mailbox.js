@@ -13,7 +13,9 @@ let mailbox = angular.module('mailbox', [
     ComponentsModule.name,
     SharedModule.name
 ]).component('mailbox', MailboxComponent)
-    .config(($stateProvider) => {
+    .config(($stateProvider,$urlRouterProvider) => {
+
+        $urlRouterProvider.otherwise('/mailbox/inbox');
         $stateProvider
             .state('mailbox', {
                 abstract: true,

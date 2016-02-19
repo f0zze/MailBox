@@ -2,6 +2,7 @@
 
 class MsgController {
     constructor() {
+        console.dir(this);
     }
 }
 

@@ -2,9 +2,9 @@ import template from './message.html';
 import controller from './messageController';
 
 let msgComponent = {
-    restrict: 'E',
     bindings: {
-        message:'@'
+        open:'&'
+        //message:'@'
     },
     template,
     controller,

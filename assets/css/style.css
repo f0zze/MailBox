@@ -1,0 +1,55 @@
+body {
+    background: url("../main.jpg") no-repeat center;
+    background-size:cover;
+}
+
+.message {
+    table-layout: fixed;
+    width:100%;
+    padding: 0 !important;
+
+}
+
+.message:hover {
+    cursor: pointer;
+}
+.message.message-red {
+    font-weight: bold;
+}
+
+.message td {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.message tr {
+    background: rgba(243,243,243,.85);
+    color: #222;
+}
+
+.message__short-text {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.message__checkbox-cell {
+    width: 30px;
+}
+
+.message__mark-cell {
+    width: 30px;
+}
+
+.message__important-cell {
+    width: 30px;
+}
+
+.message__title-cell {
+    width:200px;
+}
+
+.message__short-text-cell {
+    width:auto;
+}
+.message__date-cell {
+    width:100px;
+}

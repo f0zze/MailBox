@@ -6,8 +6,8 @@ class MessagesController {
         this.msg = "Messages Controller";
     }
 
-    showAll() {
-        alert('Hello from the Message Controller');
+    openMessage(id) {
+        alert('Open Message '+id);
     }
 }
 

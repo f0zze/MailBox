@@ -1,9 +1,17 @@
-<nav-bar></nav-bar>
-<div class="ui grid">
-    <div class="three wide column">
-        <nav></nav>
+<div class="ui stackable four column grid container">
+    <div class="one column row">
+        <div class="column">
+            <nav-bar></nav-bar>
+        </div>
     </div>
-    <div class="thirteen wide column">
-        <div ui-view></div>
+    <div class="two column row">
+        <div class="four wide column">
+            <side-nav></side-nav>
+        </div>
+        <div class="twelve wide column ">
+            <div ui-view></div>
+        </div>
     </div>
 </div>
+
+

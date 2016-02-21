@@ -7,4 +7,5 @@ angular.module('appMailbox', [
     mailbox.name
 ]);
 
+
 console.log('bootstrap app.....');

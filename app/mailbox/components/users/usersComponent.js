@@ -1,11 +1,10 @@
 import template from './users.html';
-import usersController from './usersController';
+import controller from './usersController';
 
 let navComponent = {
-    restrict: 'E',
     bindings: {},
     template,
-    usersController,
+    controller,
     controllerAs: 'users'
 };
 

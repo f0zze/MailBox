@@ -1,9 +1,12 @@
 import angular from 'angular';
 import uiRouter from 'ui-router';
+
+import User from './user/_user'
 import usersComponent from './usersComponent';
 
 let usersModule = angular.module('users', [
-        uiRouter
+        uiRouter,
+        User.name
     ])
 
     .config(($stateProvider) => {

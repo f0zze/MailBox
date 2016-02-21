@@ -3,6 +3,7 @@ import controller from './messagesController'
 
 let messageComponent = {
     bindings: {},
+    transclude: true,
     template,
     controller,
     controllerAs: 'messages'

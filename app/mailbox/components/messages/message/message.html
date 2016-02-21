@@ -1,4 +1,4 @@
-<table ng-click="msg.open({id:1})" class="message ui very basic table message-red">
+<table  class="message ui very basic table message-red">
     <colgroup>
         <col class="message__checkbox-cell">
         <col class="message__mark-cell">
@@ -8,19 +8,19 @@
         <col class="message__date-cell">
     </colgroup>
     <tr>
-        <td class="right aligned">
-            <input type="checkbox">
+        <td ng-click="msg.selected({})" class="right aligned">
+            <input ng-model="mark"  type="checkbox">
         </td>
-        <td>
+        <td ng-click="msg.mark({})">
             <i class="empty star icon"></i>
         </td>
-        <td>
+        <td ng-click="msg.important({})">
             <i class="bullseye icon"></i>
         </td>
-        <td>
+        <td ng-click="msg.open({id:1})">
           Title name
         </td>
-        <td>
+        <td ng-click="msg.open({id:1})">
             <div class="message__short-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis, dolores eaque eveniet, iure labore magnam mollitia nemo nulla omnis quae quod, sit. A asperiores expedita impedit non, ratione repudiandae!
             </div>

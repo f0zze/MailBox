@@ -2,12 +2,12 @@
 
 class MessagesController {
 
-    constructor() {
-        this.msg = "Messages Controller";
+    constructor($state) {
+        this._$state = $state;
     }
 
-    openMessage(id) {
-        alert('Open Message '+id);
+    open(msgId) {
+        this._$state.go('mailbox.message', {"id": msgId})
     }
 }
 
